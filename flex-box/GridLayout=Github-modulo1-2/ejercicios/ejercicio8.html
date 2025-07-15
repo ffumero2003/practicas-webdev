@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 8</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  .container{ 
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 30% 50% 20% ;
+  }
+  .container__top{
+    display: grid;
+    grid-template-rows: 60% 40%;
+  }
+  .container__top-header{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+  }
+  .container__top-nav{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: thistle;
+  }
+
+  .container__main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  .container__main-left{
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+
+  }
+  .container__main-content{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__footer{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: plum;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="container__top">
+      <div class="container__top-header">
+        <h1>Header</h1>
+      </div>
+      <div class="container__top-nav">
+        <h1>Navigation</h1>
+      </div>
+    </div>
+
+    <div class="container__main">
+      <div class="container__main-content">
+        <h1>Main Content</h1>
+      </div>
+      
+      <div class="container__main-left">
+        <h1>Left panel</h1>
+      </div>
+
+      
+    </div>
+
+    <div class="container__footer">
+      <h1>Footer</h1>
+    </div>
+
+  </div>
+
+  
+</body>
+</html>

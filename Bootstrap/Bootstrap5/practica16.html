@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practica 16</title>
+</head>
+<style>
+  
+  body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+  .header, .sidebar,  .content, .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 50px;
+  }
+
+  
+  .header{
+    grid-area: header;
+  }
+  .sidebar{
+    grid-area: sidebar;
+  }
+  .content{
+    grid-area: main-content;
+    position: relative;
+  }
+  .content h1{
+    margin: 10px;
+  }
+  .img{
+    width: 40px ;
+    padding: 10px;
+  }
+  .one{
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+  }
+  .two{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .three{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .four{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .footer{
+    grid-area: footer;
+  }
+  .container{
+    display: grid;
+    gap: 10px;
+    width: 50%;
+    height: 50%;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "sidebar main-content main-content"
+    "footer footer footer"
+    ;
+    
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="header"><h1>Header</h1></div>
+    <div class="sidebar"><h1>Sidebar</h1></div>
+    <div class="content">
+      <h1><img src="https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png" class="img one">Content <img src="https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png" class="img two"></h1>
+      <h1><img src="https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png" class="img three">The four arrows are inline images inside the content area <img src="https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png" class="img four"></h1>
+    </div>
+    <div class="footer"><h1>Footer</h1></div>
+  </div>
+  
+</body>
+</html>

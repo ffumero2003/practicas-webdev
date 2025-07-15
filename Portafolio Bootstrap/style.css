@@ -1,0 +1,251 @@
+:root {
+  --bg-page: #0B0B0C;            /* Full background */
+  --bg-section: #111111;         /* Hero sections or large layout areas */
+  --bg-container: rgba(26, 26, 26, 0.2); /* Cards, modals, content panels */
+  --bg-surface: #1E1E1E;         /* Buttons, inputs, dropdowns */
+  --bg-hover: #222222;           /* Hover state for containers, buttons */
+  --bg-hover-text: #AFAFAF;      /* Hover state for text links */
+  --bg-border: #2A2A2A;          /* Divider lines or input outlines */
+  --bg-overlay: rgba(0, 0, 0, 0.3);  /* For overlays or modals */
+
+  --text-primary: #FFFFFF;       /* Main white text */
+  --text-muted: #9E9E9E;         /* Subtext */
+
+}
+
+
+/* Global reset */
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Black background */
+/* Typography */
+.linear-hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.linear-hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+/* Buttons */
+.linear-btn {
+  background-color: #ffffff;
+  color: #060505;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.linear-btn:hover {
+  background-color: var(--bg-hover);
+  color: var(--bg-hover-text);
+  transform: translateY(-2px);
+}
+
+/*anchor hovers and more */
+.linear-cta-link {
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease
+}
+
+.linear-cta-link:hover {
+  color: var(--bg-hover-text);
+}
+
+.link-underline {
+  position: relative;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--bg-hover-text);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+}
+
+
+/* Navigation container */
+.linear-container {
+  background-color: var(--bg-container);
+  color: var(--text-primary);
+  padding: 1rem;
+  border-radius: 1rem;
+  z-index: 999;
+
+}
+
+
+/* Herro Section */
+.hero-section {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-section spline-viewer {
+  grid-area: 1 / 1;
+  width: 120%;
+  height: 100%;
+  z-index: 1;
+}
+
+.text-overlay {
+  grid-area: 1 / 1;
+  z-index: 2;
+  color: white;
+  padding: 2rem;
+
+  max-width: 700px;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+
+  
+}
+
+/* END OF BLACK BACKGROUND */
+
+/* white separator */
+.container-separator {
+  position: relative;
+  width: 100%;
+  background-color: white;
+
+  padding-top: 300px;   /* Adds space at the top */
+  padding-bottom: 300px; /* Adds space at the bottom if needed */
+
+
+  border-top-left-radius: 100% 100%;
+  border-top-right-radius: 100% 100%;
+  border-bottom-left-radius: 100% 100%;
+  border-bottom-right-radius: 100% 100%;
+
+  margin-top: -50px;   /* Controls overlap with previous section */
+  margin-bottom: -1px;  /* Removes bottom gap if needed */
+}
+
+
+
+/* 
+.container-separator{
+  width: 100%;
+  background-color: white;
+}
+
+.container-separator-bottom-curve {
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  border-bottom-left-radius: 100% 100%;
+  border-bottom-right-radius: 100% 100%;
+  margin-bottom: -1px;
+} */
+
+
+
+
+
+/* START OF WHITE BACKGROUND */
+
+:root {
+  /* Backgrounds for light sections */
+  --white-page: #ffffff;              /* Full white background */
+  --white-section: #f9f9f9;           /* Light sections (e.g. About Me, Contact) */
+  --white-container: #f2f2f2;         /* Cards or content areas */
+  --white-surface: #eaeaea;           /* Buttons or inputs */
+  --white-hover: #dedede;             /* Hover state */
+  --white-border: #d4d4d4;            /* Borders, outlines */
+  --white-overlay: rgba(255, 255, 255, 0.8); /* For modals or overlays */
+
+  /* Text on white backgrounds */
+  --text-dark: #0b0b0c;               /* Main dark text */
+  --text-muted-dark: #555555;         /* Subtle or secondary text */
+}
+
+
+/* White background sections */
+.white-section {
+  color: var(--text-dark);
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.white-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+.white-section p {
+  font-size: 1.1rem;
+  color: var(--text-muted-dark);
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.white-btn {
+  background-color: var(--text-dark);
+  color: var(--white-page);
+  border: none;
+  padding: 0.7rem 1.7rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.white-btn:hover {
+  background-color: var(--white-hover);
+  transform: translateY(-2px);
+}
+
+.project-card {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+
+/* END OF WHITE BACKGROUND */
+
+
+
+
+
+

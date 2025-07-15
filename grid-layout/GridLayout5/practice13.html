@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice 13</title>
+</head>
+<style>
+
+  *{
+    border: 1px solid black;
+  }
+  body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: auto 0;
+  }
+
+  .wrapper{
+    display: grid;
+    height: 50%;
+    width: 50%;
+    background-color: blue;
+    grid-template-areas: 
+    "one two"
+    "three four"
+    ;
+  }
+  .item{
+    display: grid;
+    place-items: center;
+  }
+
+  .one{
+    grid-area: one;
+  }
+  .two{
+    grid-area: two;
+  }
+  .three{
+    grid-area: three;
+  }
+  .four{
+    grid-area: four;
+  }
+
+  @media(min-width: 900px){
+    .wrapper{
+      grid-template-areas: 
+      "one two"
+      "three four"
+      ;
+    }
+  }
+
+  @media(max-width: 900px){
+    .wrapper{
+      grid-template-areas: 
+      "one"
+      "two"
+      "three"
+      "four"
+      ;
+    }
+  }
+
+
+
+  
+
+</style>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="item one"><h1>Speed</h1></div>
+      <div class="item two"><h1>Strength</h1></div>
+      <div class="item three"><h1>Longevity</h1></div>
+      <div class="item four"><h1>Power</h1></div>
+    </div> 
+  </div>  
+</body>
+</html>

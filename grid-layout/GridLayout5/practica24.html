@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practica 24</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 80%;
+    width: 80%;
+    gap: 10px;
+    position: relative;
+  }
+
+  .item{
+    border: 1px solid black;
+  }
+
+  /* .container2{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  } */
+
+  .one{
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    border: 3px solid black;
+    padding: 20px;
+  }
+
+  .two{
+    position: absolute;
+    top: 60px;
+    right: 500px;
+    border: 3px solid black;
+    padding: 20px;
+  }
+
+  .three{
+    position: absolute;
+    top: 60px;
+    right: 00px;
+    border: 3px solid black;
+    padding: 20px;
+    width: 30%;
+    height: 60%;
+  }
+
+  .four{
+    position: absolute;
+    top: 400px;
+    left: 30px;
+    border: 3px solid black;
+    padding: 20px;
+    
+  }
+
+  .five{
+    position: absolute;
+    top: 400px;
+    right: 500px;
+    border: 3px solid black;
+    padding: 20px;
+  }
+
+</style>
+<body>
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+
+    <div class="one"><h1>This is box A</h1></div>
+    <div class="two"><h1>This is box B</h1></div>
+    <div class="three">
+      <p>Each of the boxes on the left has a grid area of 3 columns and 3 rows (we're counting the gutter col/row).</p>
+      <p>The align-items property is used to align the content inside each grid-area.</p>
+      <p>Other values of align-items are:</p>
+      <ul>
+        <li>stretch</li>
+        <li>start</li>
+        <li>end</li>
+        <li>center</li>
+      </ul>
+    </div>
+    <div class="four"><h1>This is box C</h1></div>
+    <div class="five"><h1>This is box D</h1></div>
+  </div>
+
+  <!-- <div class="container2">
+    <div class="one"><h1>This is box A</h1></div>
+    <div class="two"><h1>This is box B</h1></div>
+    <div class="three">
+      <p>Each of the boxes on the left has a grid area of 3 columns and 3 rows (we're counting the gutter col/row).</p>
+      <p>The align-items property is used to align the content inside each grid-area.</p>
+      <p>Other values of align-items are:</p>
+      <ul>
+        <li>stretch</li>
+        <li>start</li>
+        <li>end</li>
+        <li>center</li>
+      </ul>
+    </div>
+    <div class="four"><h1>This is box C</h1></div>
+    <div class="five"><h1>This is box D</h1></div>
+  </div> -->
+  
+</body>
+</html>

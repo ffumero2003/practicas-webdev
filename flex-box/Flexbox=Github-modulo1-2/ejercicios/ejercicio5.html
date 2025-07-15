@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 5</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  .container{
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+
+  }
+  .container__left{
+    height: 100vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: violet;
+  }
+  .container__right{
+    height: 100vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container__header{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+  }
+  .container__main{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .container__footer{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: plum;
+  }
+
+</style>
+<body>
+  <div class="container">
+    <div class="container__left">
+      <h1>Left panel</h1>
+    </div>
+    <div class="container__right">
+      <div class="container__header">
+        <h1>Header</h1>
+      </div>
+      <div class="container__main">
+        <h1>Main Content</h1>
+      </div>
+      <div class="container__footer">
+        <h1>Footer</h1>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>

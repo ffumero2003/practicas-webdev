@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tweet</title>
+</head>
+<style>
+  body{
+    background-color: rgb(108, 205, 237);
+    height: 100vh;
+  }
+
+  .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__tweet{
+    max-width: 50%;
+    max-height: 40%;
+    background-color: white;
+    border-radius: 12px;
+  }
+
+  
+
+  .container__tweet-user{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    
+
+  }
+
+   .container__tweet-user img{
+    max-width: 100px;
+    max-height: auto;
+   }
+
+   .container__tweet-user-name{
+    display: flex;
+    flex-direction: column;
+    
+   }
+
+   .container__tweet-user-name h1{
+    margin-bottom: 0;
+   }
+
+   .container__tweet-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    height: 80px;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+   }
+
+  .container__tweet-post p{
+    font-size: 22px;
+  }
+
+  .container__tweet-post-date{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .container__tweet-post-date p{
+    margin-top: 0;
+  }
+
+  .container__tweet-likes-shares{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto; 
+    max-width: 90%;
+ 
+    justify-content: space-between;
+    max-height: 80px;
+
+  }
+
+  .container__tweet-likes-tweets{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .container__tweet-likes-tweets h3{
+    margin-left: 10px;
+  }
+
+  .container__tweet-likes-tweets h3 span{
+    font-weight: normal;
+  }
+
+  .container__tweet-share-btns ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container__tweet-share-btns ul li{
+      list-style-type: none;
+      padding: 0 5px ;
+  }
+
+  .container__tweet-share-btns ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18.72px;
+  }
+</style>
+<body>
+
+  <div class="container">
+    <div class="container__tweet">
+      
+        <div class="container__tweet-user">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="user">
+          <div class="container__tweet-user-name">
+            <h1>User Name</h1>
+            <h3>@username</h3>
+          </div>
+        </div>
+
+        <div class="container__tweet-post">
+          <p>The Analytical Engine has no pretensions whatever to originate anything. It can do whatever we know how to order it to perform.</p>
+        </div>
+        <div class="container__tweet-post-date">
+          <p>2:32 PM - 12 Mayo de 1842</p>
+        </div>
+
+        <hr style="max-width: 90%;">
+
+        <div class="container__tweet-likes-shares">
+          <div class="container__tweet-likes-tweets">
+            <h3>203<span> Retweets</span></h3>
+            <h3>532<span> Likes</span></h3>
+          </div>
+
+          <div class="container__tweet-share-btns">
+            <ul>
+              <li><a href="#">Share</a></li>
+              <li><a href="#">Retweet</a></li>
+              <li><a href="#">Like</a></li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  
+</body>
+</html>
