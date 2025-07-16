@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>practica 16</title>
 </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 <style>
   
   body{
@@ -84,15 +85,18 @@
   }
 </style>
 <body>
-  <div class="container">
-    <div class="header"><h1>Header</h1></div>
-    <div class="sidebar"><h1>Sidebar</h1></div>
-    <div class="content">
-      <h1><img src="https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png" class="img one">Content <img src="https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png" class="img two"></h1>
-      <h1><img src="https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png" class="img three">The four arrows are inline images inside the content area <img src="https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png" class="img four"></h1>
+  <div class="d-flex flex-column ">
+    <div class="d-flex justify-content-center align-items-center border border-primary"><h1>Header</h1></div>
+    <div class="d-flex py-2 gap-2">
+    <div class="d-flex justify-content-center align-items-center border border-primary p-4"><h1>Sidebar</h1></div>
+    <div class="d-flex justify-content-center align-items-center border border-primary p-5 position-relative">
+      <h1><img src="https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png" class="position-absolute top-0 start-0" height="30">Content <img src="https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png" class="position-absolute top-0 end-0" height="30"></h1>
+      <h1><img src="https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png" class="position-absolute bottom-0 start-0" height="30">The four arrows are inline images inside the content area <img src="https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png" class="position-absolute bottom-0 end-0" height="30"></h1>
     </div>
-    <div class="footer"><h1>Footer</h1></div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center border border-primary"><h1>Footer</h1></div>
   </div>
   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
