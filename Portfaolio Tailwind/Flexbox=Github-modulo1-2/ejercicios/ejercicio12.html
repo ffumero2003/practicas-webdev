@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 12</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  .container{
+    height: 100vh;
+  }
+
+  .container__top{
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+  }
+
+  .container__top-header{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+  }
+
+  .container__top-nav{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+  }
+
+  .container__main{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .container__main-left,
+  .container__main-middle,
+  .container__main-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__main-left,
+  .container__main-right{
+    width: 25%;
+    background-color: violet;
+  }
+
+  .container__main-middle{
+    width: 50%;
+  }
+
+  .container__footer{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: plum;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="container__top">
+      <div class="container__top-header">
+        <h1>Header</h1>
+      </div>
+      <div class="container__top-nav">
+        <h1>Navigation</h1>
+      </div>
+    </div>
+
+    <div class="container__main">
+      <div class="container__main-left">
+        <h1>Left</h1>
+      </div>
+      <div class="container__main-middle">
+        <h1>Middle</h1>
+      </div>
+      <div class="container__main-right">
+        <h1>Right</h1>
+      </div>
+    </div>
+
+    <div class="container__footer">
+      <h1>Footer</h1>
+    </div>
+  </div>
+  
+</body>
+</html>

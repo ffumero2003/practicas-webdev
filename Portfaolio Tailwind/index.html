@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-r from-white via-blue-100 to-white text-gray-900">
+
+  <!-- Nav Section -->
+  <nav>
+    <div class="flex w-full justify-between bg-white border-b border-gray-200 p-8 shadow-sm">
+      <h1 style="font-family: 'Zen Old Mincho', serif;" class="text-4xl font-bold text-blue-800">F</h1>
+      <ul class="flex items-center gap-6">
+        <li>
+          <a href="#about" class="relative inline-block text-gray-700 after:block after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-600">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="relative inline-block text-gray-700 after:block after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-600">
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="relative inline-block text-gray-700 after:block after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-600">
+            Skills
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="relative inline-block text-gray-700 after:block after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-600">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Head Section -->
+  <section class="relative w-full h-screen overflow-hidden">
+    <div class="absolute inset-0 z-0">     <!--Inset is the equivalent to top: 0; right: 0; bottom: 0; left: 0;-->
+        <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.27/build/spline-viewer.js"></script>
+        <spline-viewer class="w-[110%] h-full pointer-events-none" url="https://prod.spline.design/G7y1bPZY2xY3ksAE/scene.splinecode"></spline-viewer> -->
+        <img src="./assets/Screenshot 2025-07-13 at 4.30.50 PM.png" alt="background">
+    </div>
+    <div class="absolute top-40 left-12 z-10 text-left max-w-2xl">
+      <h1 class="text-5xl font-bold text-blue-900 mb-4">Welcome to my Portfolio</h1>
+      <p class="text-gray-700 text-lg mb-6">Frontend Developer</p>
+      <button class="rounded bg-blue-500 text-white px-6 py-3 hover:bg-blue-600 transition-all duration-300">
+        Contact
+      </button>
+    </div>
+  </section>
+
+  <!-- About Me -->
+   <section id="about">
+    <div class="flex justify-center items-center gap-x-4 px-6 max-w-6xl mx-auto">
+      <div class="flex w-[40%]">
+        <lord-icon
+            src="https://cdn.lordicon.com/rpviwvwn.json"
+            trigger="loop"
+            colors="primary:#98a7ed,secondary:#466df0"
+            style="width:450px;height:450px">
+        </lord-icon>
+      </div>
+      <div class="flex w-[60%] flex-col">
+        <h1 class="text-5xl font-bold text-blue-900 mb-4">About Me</h1>
+        <p class="text-gray-700 text-lg mb-6">I'm a front-end developer passionate about 
+          crafting beautiful and intuitive web experiences. I enjoy turning ideas into responsive, 
+          accessible, and high-performing interfaces using modern tools like HTML, CSS, JavaScript, 
+          and frameworks like React and TailwindCSS. I’m always learning, always building, and always 
+          focused on clean code and smooth design.</p>
+      </div>
+
+    </div>
+   </section>
+
+   <!-- Projects -->
+    <section class="flex justify-center items-center py-16 px-6" id="projects">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full bg-gradient-to-r from-white via-blue-400 to-white p-8 rounded-lg shadow-md text-gray-900">
+
+
+    <div class="bg-white rounded-lg shadow p-6">
+      <img src="https://www.teamly.com/blog/wp-content/uploads/2022/01/Small-Projects.png" alt="Project Image" class="w-full h-48 object-cover rounded mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Project Name</h3>
+      <p class="text-gray-700">Project Description goes here. You can describe what the project is about, tools used, etc.</p>
+      <button class="rounded bg-blue-500 text-white px-4 py-2 hover:bg-blue-800 transition-all duration-400 mt-3">See Project</button>. 
+      <!-- rounded bg-blue-500 text-white px-6 py-3 hover:bg-blue-600 transition-all duration-300 -->
+    </div>
+
+    
+    <div class="bg-white rounded-lg shadow p-6">
+      <img src="https://www.teamly.com/blog/wp-content/uploads/2022/01/Small-Projects.png" alt="Project Image" class="w-full h-48 object-cover rounded mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Project Name</h3>
+      <p class="text-gray-700">Project Description goes here. You can describe what the project is about, tools used, etc.</p>
+      <button class="rounded bg-blue-500 text-white px-4 py-2 hover:bg-blue-800 transition-all duration-400 mt-3">See Project</button>. 
+
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-6">
+      <img src="https://www.teamly.com/blog/wp-content/uploads/2022/01/Small-Projects.png" alt="Project Image" class="w-full h-48 object-cover rounded mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Project Name</h3>
+      <p class="text-gray-700">Project Description goes here. You can describe what the project is about, tools used, etc.</p>
+      <button class="rounded bg-blue-500 text-white px-4 py-2 hover:bg-blue-800 transition-all duration-400 mt-3">See Project</button>. 
+
+    </div>
+    <div class="bg-white rounded-lg shadow p-6">
+      <img src="https://www.teamly.com/blog/wp-content/uploads/2022/01/Small-Projects.png" alt="Project Image" class="w-full h-48 object-cover rounded mb-4">
+      <h3 class="text-2xl font-semibold mb-2">Project Name</h3>
+      <p class="text-gray-700">Project Description goes here. You can describe what the project is about, tools used, etc.</p>
+      <button class="rounded bg-blue-500 text-white px-4 py-2 hover:bg-blue-800 transition-all duration-400 mt-3">See Project</button>. 
+
+    </div>
+
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section class="py-16 px-6  flex justify-center" id="skills">
+      <div class="w-[80%]">
+        <h2 class="text-4xl text-blue-900 mb-10 text-center">Skills</h2>
+        <div class="grid grid-cols-4 sm-grid-cols-5 md-grid-cols-6 gap-2 place-items-center pb-10 w-[80%] mx-auto">
+          <div class="flex flex-col items-center">
+            <img src="./assets/bootstrap-svgrepo-com.svg" alt="Bootstrap" height="100" width="100">
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="assets/css-3-svgrepo-com.svg" alt="CSS" height="100" width="100">
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="./assets/git-svgrepo-com.svg" alt="Git" height="100" width="100">
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="./assets/github-142-svgrepo-com.svg" alt="Github" height="100" width="100">
+          </div>
+
+        </div>
+
+        <div class="grid grid-cols-4 sm-grid-cols-5 md-grid-cols-6 gap-2 place-items-center pb-10 mx-auto w-[60%]">
+
+          <div class="flex flex-col items-center">
+            <img src="./assets/html-5-svgrepo-com.svg" alt="Html" height="100" width="100">
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="./assets/idpEx9OuCE_1752424612725.png" alt="Spline" height="100" width="100">
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="./assets/js-svgrepo-com.svg" alt="JS" height="100" width="100">
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="./assets/netlify-svgrepo-com.svg" alt="Netlify" height="100" width="100">
+          </div>
+        </div>
+        <div class="grid grid-cols-4 sm-grid-cols-5 md-grid-cols-6 gap-2 place-items-center pb-10 w-[80%] mx-auto">
+          <div class="flex flex-col items-center">
+            <img src="./assets/react-javascript-js-framework-facebook-svgrepo-com.svg" alt="React" height="100" width="100">
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="./assets/shopify-color-svgrepo-com.svg" alt="Liquid" height="100" width="100">
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="./assets/tailwind-svgrepo-com.svg" alt="Tailwind" height="100" width="100">
+          </div>
+
+          <div class="flex flex-col items-center">
+            <img src="./assets/vs-code-svgrepo-com.svg" alt="Spline" height="100" width="100">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section contact -->
+    <section class="py-12 px-8 flex justify-center items-center" id="contact">
+      
+        <div class="flex w-[100%] w-l justify-end px-8">
+          <form action="" class="flex flex-col gap-3 w-[60%]">
+            <input type="text" class="p-3 rounded " placeholder="Full Name*" required>
+            <input type="text" class ="p-3 rounded "  placeholder="Email*" required>
+            <textarea class="p-3 rounded" placeholder="Message*" required></textarea>
+            <button class="rounded bg-blue-400 w-[35%] py-2 px-3 hover:bg-blue-950 text-white transition-all duration-400">Send</button>
+          </form>
+        </div>
+        <div class="flex w-[100%] w-l justify-start px-8">
+          <lord-icon
+              src="https://cdn.lordicon.com/jdgfsfzr.json"
+              trigger="hover"
+              colors="primary:#98a7ed,secondary:#466df0"
+              style="width:350px;height:350px">
+          </lord-icon>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <section class="py-5 px-8 flex justify-center items-center" id="footer">
+      <div class="flex w-[100%] w-l justify-start items-start gap-5">
+        <a href="#"><img src="./assets/linkedin-svgrepo-com.svg" alt="" height="50" width="50"></a>
+        <a href="#"><img src="./assets/github-142-svgrepo-com.svg" alt="" height="50" width="50"></a>
+      </div>
+      <div class="flex w-[100%] w-l justify-end items-end gap-5">
+        <h5>Felipe Fumero @2025</h5>
+        <h5>+(506)8413-4000</h5>
+
+      </div>
+      
+
+    </section>
+
+
+
+
+
+   <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+</body>
+</html>

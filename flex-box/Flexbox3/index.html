@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox practice 3</title>
+</head>
+<style>
+
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: #dda901;
+  }
+
+  .layout__top-section{
+    background-color: #dda901;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .layout__top-section-title{
+    color: white;
+    font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  .layout__nav{
+    background-color: #cccccc;
+    padding: 30px 0;
+  }
+  .nav__section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  .nav__section li{
+    list-style-type: none;
+    background-color: #ffffff;
+    border: 1px solid black;
+    padding: 20px 100px;
+  }
+
+  .nav__section li a{
+    color: #e6b949;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .layout__middle{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    background-color: #808080;
+    padding: 20px;
+  }
+
+  .layout__middle-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+    
+    background-color: #ffffff;
+    box-sizing: border-box;
+
+  }
+
+
+  .layout__middle-items p{
+      width: 50%;
+      margin-top: 0;
+  }
+
+  .layout__middle-items img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .layout__middle-items button{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+  }
+
+  .footer__section{
+    background-color: #dda901;
+    text-align: center;
+    padding: 30px;
+  }
+
+
+
+</style>
+<body>
+  <div class="layout__top-section">
+    <h1 class="layout__top-section-title">Power Grid: Store or Homepage</h1>
+  </div>
+  <div class="layout__nav">
+    <ul class="nav__section">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="layout__middle">
+    <div class="layout__middle-items">
+      <img src="https://media.istockphoto.com/id/485371557/photo/twilight-at-spirit-island.jpg?s=612x612&w=0&k=20&c=FSGliJ4EKFP70Yjpzso0HfRR4WwflC6GKfl4F3Hj7fk=" alt="photo">
+      <p>This is some awesome content that is on the page</p>
+      <button>Go Somewhere</button>
+    </div>
+
+    <div class="layout__middle-items">
+      <img src="https://media.istockphoto.com/id/485371557/photo/twilight-at-spirit-island.jpg?s=612x612&w=0&k=20&c=FSGliJ4EKFP70Yjpzso0HfRR4WwflC6GKfl4F3Hj7fk=" alt="photo">
+      <p>This is more content than the previous box, but less than the next</p>
+      <button>Click Me</button>
+    </div>
+
+    <div class="layout__middle-items">
+      <img src="https://media.istockphoto.com/id/485371557/photo/twilight-at-spirit-island.jpg?s=612x612&w=0&k=20&c=FSGliJ4EKFP70Yjpzso0HfRR4WwflC6GKfl4F3Hj7fk=" alt="photo">
+      <p>We have lots of content here to show that content can grow, and everything can 
+        be the same size if you user flexbox. Evene if this has a ton of text, it will line up 
+        with the other sections</p>
+      <button>Do Something</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer__section">
+      <h4>
+        Copyright @ 2016
+      </h4>
+    </div>
+  </footer>
+  
+</body>
+</html>

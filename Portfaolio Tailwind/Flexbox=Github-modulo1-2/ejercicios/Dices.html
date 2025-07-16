@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dices</title>
+</head>
+<style>
+  body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 20%;
+    gap: 20px;
+    }
+
+  .dices{
+    width: 200px;
+    height: 200px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(64, 112, 224);
+    border-radius: 12px;
+  }
+
+  /* dice 1 */
+  .dice1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dice1 span{
+    margin: 0;
+  }
+
+  /* dice 2 */
+  .dice2{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 200px;
+  }
+
+  .dice2-one{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  .dice2-two{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  /* dice 3 */
+
+  .dice3{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 200px;
+  }
+
+  .dice3-one{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  .dice3-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .dice3-three{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  /* dice 4 */
+
+
+  .dice4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .dice4-section1,
+  .dice4-section2{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+ /* dice 5 */
+
+
+   .dice5{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .dice5-section1,
+  .dice5-section3{
+    display: flex;
+    justify-content: space-between;
+  }
+.dice5-section2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* dice 6 */
+
+ .dice6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .dice6-section1,
+  .dice6-section2,
+  .dice6-section3{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+</style>
+<body>
+  <div class="container">
+    <div class="dices">
+      <div class="dice1">
+        <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+      </div>
+    </div>
+
+    <div class="dices">
+      <div class="dice2">
+        <div class="dice2-one">
+          <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+        </div>
+        <div class="dice2-two">
+          <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dices">
+      <div class="dice3">
+        <div class="dice3-one">
+          <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+        </div>
+        <div class="dice3-two">
+          <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+        </div>
+        <div class="dice3-three">
+          <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dices">
+      <div class="dice4">
+        <div class="dice4-section1">
+   
+            <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+
+      
+            <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+
+        </div>
+
+        <div class="dice4-section2">
+              <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+
+        
+              <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+        </div>
+        
+      </div>
+    </div>
+    <div class="dices">
+      <div class="dice5">
+        <div class="dice5-section1">
+   
+            <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+
+      
+            <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+
+        </div>
+        <div class="dice5-section2">
+            <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+        </div>
+
+        <div class="dice5-section3">
+              <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+
+        
+              <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="dices">
+      <div class="dice6">
+        <div class="dice6-section1">
+   
+            <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+            <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+
+        </div>
+
+        <div class="dice6-section2">
+              <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span> 
+              <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+        </div>
+        <div class="dice6-section3">
+              <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+              <span><svg height="50" width="50" xmlns="http://www.w3.org/2000/svg"><circle r="23" cx="25" cy="25" fill="white" /></svg></span>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

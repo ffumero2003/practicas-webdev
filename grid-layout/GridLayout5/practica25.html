@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid Overlay</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      gap: 10px;
+      width: 80%;
+      height: 80%;
+      background-image: linear-gradient(#eee 1px, transparent 1px), 
+                        linear-gradient(90deg, #eee 1px, transparent 1px);
+      background-size: calc(100% / 6) calc(100% / 4);
+      justify-items: center;
+      align-items: center;
+    }
+
+    .item {
+      border: 1px solid black;
+      width: 100%;
+      height: 100%;
+    }
+
+    .box {
+      background: rgba(0, 128, 255, 0.1);
+      border: 2px solid black;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .one {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+    }
+
+    .two {
+      grid-column: 3 / 5;
+      grid-row: 1 / 3;
+    }
+
+    .three {
+      grid-column: 5 / 7;
+      grid-row: 1 / 3;
+    }
+
+    .four {
+      grid-column: 2 / 4;
+      grid-row: 3 / 5;
+    }
+
+    .five {
+      grid-column: 4 / 6;
+      grid-row: 3 / 5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Grid background only -->
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+
+    <!-- Content boxes placed with grid-row / grid-column -->
+    <div class="box one"><h1>This is box A</h1></div>
+    <div class="box two"><h1>This is box B</h1></div>
+    <div class="box three">
+      <p>Each of the boxes on the left has a grid area of 3 columns and 3 rows.</p>
+      <p>The <strong>justify-items</strong> property centers content inside each grid cell.</p>
+    </div>
+    <div class="box four"><h1>This is box C</h1></div>
+    <div class="box five"><h1>This is box D</h1></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1</title>
+</head>
+<style>
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  .container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+ 
+  }
+
+  .container__header{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: pink;
+  }
+
+  .container__main{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .container__footer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: purple;
+  }
+
+
+
+</style>
+<body>
+  <div class="container">
+    <div class="container__header"> 
+      <h1>Header</h1>
+    </div>
+    <div class="container__main">
+      <h1>Main Content</h1>
+    </div>
+    <div class="container__footer">
+      <h1>Footer</h1>
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 5</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  .container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .container__left{
+    display: grid;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: violet;
+  }
+  .container__right{
+    display: grid;
+    grid-template-rows: 30% 50% 20%;
+  }
+  .container__header{
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+  }
+  .container__main{
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .container__footer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: plum;
+  }
+
+</style>
+<body>
+  <div class="container">
+    <div class="container__left">
+      <h1>Left panel</h1>
+    </div>
+    <div class="container__right">
+      <div class="container__header">
+        <h1>Header</h1>
+      </div>
+      <div class="container__main">
+        <h1>Main Content</h1>
+      </div>
+      <div class="container__footer">
+        <h1>Footer</h1>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>

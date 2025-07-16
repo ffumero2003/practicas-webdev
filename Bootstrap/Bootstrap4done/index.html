@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    img {
+      object-fit: cover;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Flexbox 4</title>
+</head>
+<body>
+  <div class="d-flex vh-100 w-100">
+    
+    <div class="d-flex flex-column w-50 h-100 px-2 py-2">
+  
+      <div class="d-flex flex-row justify-content-center align-items-center bg-success rounded  gap-2" style="height: 10%;">
+        <div class="d-flex w-50 bg-primary rounded h-100 justify-content-center align-items-center">
+          <h2 class="m-0"><i class="fa-solid fa-car me-2"></i> Shareyourcar</h2>
+        </div>
+        <div class="d-flex w-50 bg-primary rounded h-100">
+          <i class="fa-solid fa-magnifying-glass fa-2x d-flex align-items-center ms-2"></i>
+        </div>
+        
+      </div>
+
+
+      <div class="h-90 mt-2">
+        <img src="https://picsum.photos/id/237/900/900" alt="" class="w-100 h-100 rounded">
+      </div>
+    </div>
+
+
+    <div class="d-flex flex-column w-50 h-100 px-2 py-2">
+
+      <div class="d-flex justify-content-around align-items-center bg-primary rounded text-white" style="height: 10%;">
+        <h2>HOME</h2>
+        <h2>ABOUT</h2>
+        <h2>CONTACT</h2>
+      </div>
+
+ 
+      <div class="d-flex gap-2 mt-2" style="height: 40%;">
+        <div class="bg-primary rounded text-white p-3 w-100">
+          <h2>COST SAVINGS</h2>
+          <p>Texto 1</p>
+        </div>
+        <div class="bg-primary rounded text-white p-3 w-100">
+          <h2>COST SAVINGS</h2>
+          <p>Texto 2</p>
+        </div>
+        <div class="bg-primary rounded text-white p-3 w-100">
+          <h2>COST SAVINGS</h2>
+          <p>Texto 3</p>
+        </div>
+      </div>
+
+      
+      <div class="bg-primary rounded text-white d-flex justify-content-center align-items-center text-center mt-2" style="height: 30%;">
+        <h1>SHARE THE RIDE & HELP SAVE THE PLANET</h1>
+      </div>
+
+      
+      <div class="d-flex bg-primary rounded text-white mt-2" style="height: 20%;">
+        <div class="col d-flex justify-content-center align-items-center">
+          <h2 class="text-center">Benson, <br> Minnesota</h2>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <p>lorem impsum dolor sit amet, consectetur adipiscing elit, sed</p>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center gap-2">
+          <i class="fab fa-twitter fa-2x bg-success p-2 rounded"></i>
+          <i class="fab fa-facebook fa-2x bg-success p-2 rounded"></i>
+          <i class="fab fa-whatsapp fa-2x bg-success p-2 rounded"></i>
+          <i class="fab fa-instagram fa-2x bg-success p-2 rounded"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

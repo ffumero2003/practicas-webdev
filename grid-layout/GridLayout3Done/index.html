@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout 3</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr 1fr 5fr 2fr;
+    background-color: rgb(246, 209, 74);
+    height: 90%;
+    width: 90%;
+  }
+
+  .container__top{
+    display: grid;
+    place-items: center;
+    border: 2px solid black;
+  }
+
+   .container__top h1 {
+    color: black;
+   }
+
+   .container__nav{
+    background-color: gray;
+    display: grid;
+    
+    gap: 20px;
+   }
+
+   .container__nav ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 30px;
+    gap: 10px;
+
+
+
+
+   }
+
+  .container__nav ul li {
+      list-style: none;
+      text-align: center;
+      padding: 10px 0;
+      background-color: white;
+      font-size: 20px;
+
+  }
+
+  .container__main-content{
+    background-color: rgb(184, 182, 182);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 15px;
+
+    
+  }
+
+  .container__main-content-item{
+    display: grid;
+    place-items: center;
+    background-color: white;
+    margin: 10px;
+    
+
+  }
+
+   .container__main-content-item img{
+    max-width: 90%;
+    max-height: 90%;
+   }
+
+   .container__main-content-item p{
+    max-width: 80%;
+    max-height: 80%;
+ 
+    margin-bottom: 20px;
+   }
+
+   .container__main-content-item button{
+    min-width: 80%;
+    min-height: 80%;
+    margin-bottom: 10px;
+   }
+
+
+   .container__footer{
+    display: grid;
+    place-items: center;
+   }
+
+
+
+
+</style>
+<body>
+  <div class="container">
+
+    <div class="container__top">
+      <h1>Power Grid: Store or Homepage</h1>
+    </div>
+
+
+    <div class="container__nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Careers</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <div class="container__main-content">
+      <div class="container__main-content-item">
+        <img src="https://cdn.pixabay.com/photo/2023/12/06/21/07/photo-8434386_640.jpg" alt="photo">
+        <p>This is some awesome content that is on the page</p>
+        <button>Click me</button>
+      </div>
+      <div class="container__main-content-item">
+        <img src="https://cdn.pixabay.com/photo/2023/12/06/21/07/photo-8434386_640.jpg" alt="photo">
+        <p>This is some awesome content that is on the page
+          This is some awesome content that is on the page
+
+        </p>
+        <button>Click me</button>
+      </div>
+      <div class="container__main-content-item">
+        <img src="https://cdn.pixabay.com/photo/2023/12/06/21/07/photo-8434386_640.jpg" alt="photo">
+        <p>This is some awesome content that is on the page
+          This is some awesome content that is on the page
+          This is some awesome content that is on the page
+        </p>
+        <button>Click me</button>
+      </div>
+    </div>
+
+
+    <div class="container__footer">
+      <h3>Copyright @ 2016</h3>
+    </div>
+
+  </div>
+  
+</body>
+</html>

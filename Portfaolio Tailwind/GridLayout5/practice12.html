@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice 12</title>
+</head>
+<style>
+
+  *{
+    border: 1px solid black;
+  }
+  body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .sidebar{
+    grid-area: sidebar;
+  }
+  .header{
+    grid-area: header;
+  }
+  .main-content{
+    grid-area: main-content;
+  }
+  .sidebar2{
+    grid-area: sidebar-two;
+  }
+  .footer{
+    grid-area: footer;
+  }
+  .wrapper{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "sidebar"
+    "content"
+    "sidebar-two"
+    "footer"
+    ;
+  }
+
+  @media(min-width: 600px){
+    .wrapper{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: 
+      "header header header"
+      "sidebar main-content sidebar-two"
+      "footer footer footer"
+      ;
+    }
+  }
+  
+
+</style>
+<body>  
+  <div class="wrapper">
+    <div class="header"><h1>Header</h1></div>
+    <div class="sidebar"><h1>Sidebar</h1></div>
+    <div class="main-content">
+      <h1>Content</h1>
+      <p>More content than we had before so this column is now quite tall.</p>
+    </div>
+    <div class="sidebar2"><h1>Sidebar 2</h1></div>
+    <div class="footer"><h1>Footer</h1></div>
+  </div> 
+</body>
+</html>

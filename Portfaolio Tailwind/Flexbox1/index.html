@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica</title>
+  <style>
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 100%;
+  /* height: 100vh; */
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+.heading {
+  width: 100%;
+  border: 1px solid black;
+  padding: 20px;
+
+  box-sizing: border-box;
+}
+
+.heading h1,
+.heading p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.flex-box {
+  display: flex;
+  gap: 30px;
+  margin: 100px 20px;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.big-image {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  
+  border: 1px solid black;
+  text-align: left;
+  max-width: 400px;
+}
+
+.item h5{
+  font-size: 15px;
+}
+
+
+.content{
+  padding-left: 20px;
+}
+
+.item h3,
+.item p{
+  max-width: 380px;
+  width: 100%;
+  margin-top: 3px;
+}
+
+.date-icon{
+  max-width: 15px;
+  max-height: auto;
+  
+}
+
+
+.flex-box-within {
+  display: flex;
+  border: 1px solid black;
+  gap: 10px;
+  padding: 10px;
+}
+
+.flex-box-within img{
+  max-width: 50px;
+}
+
+.elements-within h6,
+.elements-within p{
+  margin: 0;
+}
+.elements-within{
+  margin-top: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1>Business Blog</h1>
+      <p>We are a passionate digital desing agenciy that specializes 
+        in beautiful and easy-to-use digital & Web development services.</p>
+    </div>
+    <div class="flex-box">
+      <div class="item">
+        <img src="https://static.vecteezy.com/system/resources/previews/001/849/553/non_2x/modern-gold-background-free-vector.jpg"  alt="photo" class="big-image" >
+        <div class="content">
+          <h5>
+            <img src="https://icons.veryicon.com/png/o/miscellaneous/esgcc-basic-icon-library/date-71.png" alt="icon" class="date-icon">
+            25.03.2022
+          </h5>
+          
+          <h3>We won another mobile excellence design award</h3>
+          <p>When you are alone for days or week at a time, you eventually become...</p>
+        </div>
+        <div class="flex-box-within">
+          <img src="https://static.thenounproject.com/png/1743561-200.png" alt="user">
+          <div class="elements-within">
+            <h6>Jennifer Freeman</h6>
+            <p>Charming Blogger</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item">
+        <img src="https://static.vecteezy.com/system/resources/previews/001/849/553/non_2x/modern-gold-background-free-vector.jpg" alt="photo" class="big-image">
+        <div class="content">
+        <h5>
+          <img src="https://icons.veryicon.com/png/o/miscellaneous/esgcc-basic-icon-library/date-71.png" alt="icon" class="date-icon">
+          25.03.2022
+        </h5>
+        <h3>Our best tips and tricks to be productive at work</h3>
+        <p>Last Year i wrote about why booking too far in advance can be...</p>
+        </div>
+        <div class="flex-box-within">
+          <img src="https://static.thenounproject.com/png/1743561-200.png" alt="user">
+          <div class="elements-within">
+            <h6>William Clark</h6>
+            <p>Travel Enthusiast</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://static.vecteezy.com/system/resources/previews/001/849/553/non_2x/modern-gold-background-free-vector.jpg" alt="photo" class="big-image">
+        <div class="content">
+        <h5>
+          <img src="https://icons.veryicon.com/png/o/miscellaneous/esgcc-basic-icon-library/date-71.png" alt="icon" class="date-icon">
+          25.03.2022
+        </h5>
+        <h3>Our best tips and tricks to be productive at work</h3>
+        <p>Last Year i wrote about why booking too far in advance can be...</p>
+        </div>
+        <div class="flex-box-within">
+          <img src="https://static.thenounproject.com/png/1743561-200.png" alt="user">
+          <div class="elements-within">
+            <h6>Tim Drakenberg</h6>
+            <p>Thinker & Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div> 
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBox Practice 2</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  .layout{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background-color: #766564;
+   
+  }
+
+  .layout__panel-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 50%;
+    background-color: #78d6b7;
+    border: 20px solid #766564;
+  }
+ 
+  .layout__panel-left h1{
+    font-family:monospace;
+    margin-left: 5px;
+    font-weight: 500;
+  }
+
+
+
+  .layout__panel-right{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 50%;
+    height: 100%;
+    
+  }
+
+  .layout__top-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #78d6b7;
+    border-top: 20px solid #766564 ;
+    border-bottom: 20px solid #766564 ;
+    
+    width: 100%;
+    height: 33%;
+  }
+
+  .layout__middle-section{
+    display: flex;
+    flex-direction: row;
+    height: 33%;
+
+  }
+
+  .layout__middle-left,
+  .layout__middle-right{
+    width: 50%;
+    height: 100%;
+    
+    background-color: #78d6b7;
+  }
+
+  .layout__middle-left{
+    border-right: 10px solid #766564;
+  }
+  .layout__middle-right{
+    border-left: 10px solid #766564;
+  }
+
+  .layout__bottom-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #78d6b7;
+    border-top: 20px solid #766564 ;
+    border-bottom: 20px solid #766564 ;
+    width: 100%;
+    height: 33%;
+  }
+
+  
+
+ 
+</style>
+<body>
+  <div class="layout">
+    
+    <div class="layout__panel-left">
+      <h1>Flexbox</h1>
+    </div>
+    <div class="layout__panel-right">
+      <div class="layout__top-section"></div>
+      <div class="layout__middle-section">
+        <div class="layout__middle-left">
+        </div>
+        <div class="layout__middle-right">
+        </div>
+      </div>
+      <div class="layout__bottom-section"></div>
+
+    </div>
+    
+
+
+  </div>
+  
+</body>
+</html>

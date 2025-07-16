@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practica 17</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    width: 50%;
+    height: 50%;
+    gap: 10px;
+    
+  }
+  .item{
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+  }
+
+  .not{
+    background-color: gray;
+  }
+
+  .even
+</style>
+<body>
+  <div class="container">
+    <div class="item not"><span>1</span></div>
+    <div class="item even"><span>2</span></div>
+    <div class="item not"><span>3</span></div>
+    <div class="item even"><span>4</span></div>
+    <div class="item not"><span>5</span></div>
+    <div class="item even"><span>6</span></div>
+    <div class="item not"><span>7</span></div>
+    <div class="item even"><span>8</span></div>
+    <div class="item not"><span>9</span></div>
+    <div class="item even"><span>10</span></div>
+    <div class="item not"><span>11</span></div>
+    <div class="item even"><span>12</span></div>
+  </div>
+  
+</body>
+</html>

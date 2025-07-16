@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dices</title>
+</head>
+<style>
+
+  body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+  }
+
+  .dices{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: red;
+  }
+
+  .circle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+  }
+
+  .dices span{
+    color: white;
+  }
+
+  .two{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+  .two1{
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+  .two2{
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 3;
+  }
+
+  .three{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+  .three1{
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+  .three2{
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+
+  .three3{
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 3;
+  }
+
+  .four{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+  .four1{
+    display: grid; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+  .four2{
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 3;
+  }
+
+  .four3{
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+
+  .four4{
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 3;
+  }
+
+  .five{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+  .five1{
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+  .five2{
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 3;
+  }
+  .five3{
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+  .five4{
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+  .five5{
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 3;
+  }
+
+
+  .six{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+  .six1{
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+  .six2{
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 3;
+  }
+
+  .six3{
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+
+  .six4{
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 3;
+  }
+
+  .six5{
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+
+  .six6{
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 3;
+  }
+
+  .six5{
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+
+  .six6{
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 3;
+  }
+
+</style>
+<body>
+  <div class="container">
+    <div class="dices one">
+      <span class="circle"></span>
+    </div>
+
+    <div class="dices two">
+      <span class="two1 circle" ></span>
+      <span class="two2 circle"></span>
+    </div>
+
+    <div class="dices three">
+      <span class="three1 circle" ></span>
+      <span class="three2 circle"></span>
+      <span class="three3 circle"></span>
+    </div>
+
+    <div class="dices four">
+      <span class="four1 circle"></span>
+      <span class="four2 circle"></span>
+      <span class="four3 circle"></span>
+      <span class="four4 circle"></span>
+    </div>
+
+    <div class="dices five">
+      <span class="five1 circle"></span>
+      <span class="five2 circle"></span>
+      <span class="five3 circle"></span>
+      <span class="five4 circle"></span>
+      <span class="five5 circle"></span>
+    </div>
+
+    <div class="dices six">
+      <span class="six1 circle"></span>
+      <span class="six2 circle"></span>
+      <span class="six3 circle"></span>
+      <span class="six4 circle"></span>
+      <span class="six5 circle"></span>
+      <span class="six6 circle"></span>
+    </div>
+  </div>
+
+</body>
+  
+
+</html>

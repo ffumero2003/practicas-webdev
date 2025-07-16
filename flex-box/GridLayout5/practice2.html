@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice 2</title>
+</head>
+<style>
+  body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .container{
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr 1fr;
+    height: 50%;
+  }
+
+  .item{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .one{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+  }
+
+  .two{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+  }
+
+  .three{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+  }
+
+  .four{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+  }
+
+  .five{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="item one">1</div>
+    <div class="item two">2</div>
+    <div class="item three">3</div>
+    <div class="item four">4</div>
+    <div class="item five">5</div>
+    <div class="item six">6</div>
+  </div>
+</body>
+</html>

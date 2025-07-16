@@ -1,0 +1,84 @@
+.layout{
+  display: flex;
+  flex-direction: row;
+  padding: 30px 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+
+}
+
+.layout__item-design  a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+
+}
+
+.layout__item-design{
+  flex: 1 1 calc(20% - 30px);
+  /* Flex grow: divide space equally */
+  /* Flex shrink: if there is enough space to shrink then shrink */
+  /* flex basis: 20% of the container(5 per row) 30px per gap */
+  min-width: 240px;
+  max-width: 100%;
+}
+
+.layout__image-container {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.layout__image-container a {
+  display: block;
+  position: relative;
+}
+
+.layout__image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.layout__image-container img:hover {
+  transform: scale(1.2);
+}
+
+.layout__image-container a span {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.layout__hr-design{
+  width: 20%;
+  margin-left: 0;
+
+}
+
+.layout__button-container{
+  text-align: center;
+
+}
+
+.layout__button-show-more{
+  padding: 25px 50px;
+  color: black;
+  font-size: 25px;
+  background-color: white;
+  cursor: pointer;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.layout__button-show-more:hover{
+  color: white;
+  background-color: black;
+}

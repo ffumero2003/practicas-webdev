@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice 13</title>
+</head>
+<style>
+
+  /* *{
+    border: 1px solid black;
+  } */
+  body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container{
+    display: grid;
+    grid-template-rows: auto 100px auto 100px auto;
+    
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    ;
+
+  }
+
+  .one, .two, .three, .four, .five{width: 400px;}
+
+  .one{
+    grid-area: one;
+  }
+  .two{
+    grid-area: two;
+    border-radius: 12px;
+    background-color: gray;
+    color: white;
+    display: grid;
+    align-items: center;
+  }
+  .two h1{
+    margin-left: 10px;
+  }
+  .three{
+    grid-area: three;
+  }
+  .four{
+    grid-area: four;
+    border-radius: 12px;
+    background-color: rgba(95, 96, 95, 0.8);
+    color: white;
+    display: grid;
+    align-items: center;
+  }
+  .four h1{
+    margin-left:10px;
+  }
+  .five{
+    grid-area: five
+  }
+
+
+</style>
+<body>
+  <div class="container">
+    <div class="one"><p>In our urban and suburban houses what should we do 
+      without cats? In our sitting or bedrooms, our libraries, in our kitchens and
+      storerooms, our farms, barns, and rickyards, in our docks, our granaries, 
+      our ships, and our wharves, in our corn markets, meat markets, and other places 
+      too numerous to mention, how useful they are! In our ships, however, the rats oft
+       set them at defiance; still they are of great service.</p></div>
+    <div class="two"><h1>Adevert!</h1></div>
+    <div class="three"><p>How wonderfully patient is the cat when watching for rats 
+      or mice, awaiting their egress from their place of refuge or that which is their 
+      home! How well Shakespeare in Pericles, Act iii., describes this keen attention 
+      of the cat to its natural pursuit!</p></div>
+    <div class="four"><h1>Another lovely advert!</h1></div>
+    <div class="five"><p>A slight rustle, and the fugitive comes forth; a quick, sharp, 
+      resolute motion, and the cat has proved its usefulness. Let any one have a plague 
+      of rats and mice, as I once had, and let them be delivered therefrom by cats, as I was, 
+      and they will have a lasting and kind regard for them.</p></div>
+  </div>  
+</body>
+</html>
